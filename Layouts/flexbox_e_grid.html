@@ -1,0 +1,115 @@
+<html lang="pt-br">
+
+            <!-- Site com FlexBox e Grid Responsivo -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FlexBox e Grid</title>
+
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .cabecalho{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid black;
+            }
+            .cabecalho ul li{
+                list-style: none;
+                padding: 10px;
+                display: inline;
+                font-size: 22px;
+            }
+            .cabecalho ul li a{
+                text-decoration: none;
+                color: black;
+            }
+            .cabecalho img{
+                width: 130px;
+                padding: 10px;
+            }
+
+            .container{
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                grid-template-rows: 30vh 60vh 10vh;
+                grid-template-areas: "n n"
+                                     "m a"
+                                     "f f";
+            }
+            nav{
+                background: tomato;
+                grid-area: n;
+                margin-top: 30px;
+            }
+            main{
+                background: green;
+                grid-area: m;
+            }
+            aside{
+                background: black;
+                grid-area: a;
+            }
+            footer{
+                background: blue;
+                grid-area: f;
+            }
+
+            @media(max-width: 800px){
+                .cabecalho img{
+                    width: 110px;
+                }
+                .cabecalho{
+                    flex-flow: column;
+                }
+                .cabecalho ul{
+                    margin: 20px 0px;
+                }
+                .cabecalho ul li{
+                    font-size: 19px;
+                    margin: 0px 5px;
+                }
+                
+            }
+        
+        </style>
+
+    </head>
+
+    <body>
+        
+        <header class="cabecalho">
+
+            <img src="" alt="">
+
+            <ul>
+                <li><a href="#">AAAAA</a></li>
+                <li><a href="#">BBBBB</a></li>
+                <li><a href="#">CCCCC</a></li>
+                <li><a href="#">DDDDD</a></li>
+            </ul>
+
+        </header>
+
+
+        <div class="container">
+
+            <nav></nav>
+            <main></main>
+            <aside></aside>
+            <footer></footer>
+
+        </div>
+
+    </body>
+
+</html>

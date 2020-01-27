@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+                <!-- Site feito com Grid Layout -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 20vh 70vh 10vh;
+            grid-template-areas: "h h"
+                                 "m a"
+                                 "f f";
+        }
+        header{
+            background: blue;
+            grid-area: h;
+        }
+        main{
+            background: green;
+            grid-area: m;
+        }
+        aside{
+            background: orange;
+            grid-area: a;
+        }
+        footer{
+            background: black;
+            grid-area: f;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+    </div>
+
+
+</body>
+
+</html>
