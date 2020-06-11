@@ -95,24 +95,24 @@ hr{
     margin: 50px 0;
 }
 img{
-    width: 200px;
+    width: 220px;
     height: 150px;
     display: block;
     border: 1px solid white;
 }
 .figuras{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     max-width: 800px;
     margin: 0 auto;
 }
 .figuras > div{
-    flex: 1 1 200px;
-    margin: 5px 20px;
+    margin: 20px auto;
 }
 .figuras div p{
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 
