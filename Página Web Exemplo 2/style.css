@@ -1,0 +1,128 @@
+body, ul, li, a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+/* Menu de navegação */
+
+.nav{
+    display: flex;
+    max-width: 950px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.navbar{
+    display: flex;
+    padding: 25px;
+}
+.navbar li{
+    margin-right: 8px; 
+}
+.navbar li a{
+    background: rgb(26, 59, 168);
+    font-size: 17px;
+    padding: 15px;
+    color: white;
+}
+.navbar li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.nav img{
+    width: 150px;
+    height: 150px;
+    padding: 24px;
+}
+@media(max-width: 1024px){
+    .nav{
+        justify-content: space-around;
+    }
+    .navbar{
+        margin: 20px;
+    }
+}
+
+
+
+
+/* Conteúdo */
+
+.conteudo{
+    display: flex;
+    margin: 70px auto;
+    max-width: 960px;
+    flex-wrap: wrap;
+    border-top: solid 2px rgb(86, 86, 221);
+    border-bottom: solid 2px rgb(86, 86, 221);
+    text-align: center;
+    justify-content: space-around;
+}
+.conteudo-texto{
+    flex: 2 1 500px;
+    margin: 0 10px;
+}
+.conteudo-texto p{
+    font-size: 20px;
+}
+.conteudo-img img{
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    width: 200px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+
+
+
+/* Rodapé */
+
+.footer{
+    display: flex;
+    max-width: 950px;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.redes1{
+    display: flex;
+    align-items: center;
+}
+.redes1 p{
+    font-size: 35px;
+    color: rgb(147, 31, 255);
+}
+.redes2 li{
+    font-size: 25px;
+    margin: 40px 0;
+}
+.redes2 li a{
+    color: white;
+    background: rgb(6, 197, 245);
+    padding: 12px;
+}
+.redes2 li a:hover{
+    text-decoration: underline;
+}
+.footer2 p{
+    text-align: center;
+    margin: 30px auto 0px auto;
+    background: rgb(104, 23, 179);
+    max-width: 960px;
+    color: white;
+    font-size: 20px;
+}
