@@ -13,45 +13,52 @@ body, ul, li, a{
 
 .nav{
     display: flex;
-    max-width: 950px;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 960px;
     margin: 0 auto;
-    flex-wrap: wrap;
+    align-items: center;
 }
-.navbar{
-    display: flex;
-    padding: 25px;
+.nav img{
+    width: 225px;
+    height: 225px;
 }
-.navbar li{
-    margin-right: 8px; 
-}
-.navbar li a{
-    background: rgb(26, 59, 168);
-    font-size: 17px;
+.subnav{
+    width: 100px;
+    text-align: center;
+    background: rgb(38, 78, 209);
+    font-size: 20px;
     padding: 15px;
     color: white;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+    width: 120px;
 }
-.navbar li a:hover{
+.subnav:hover{
+    background: rgb(20, 43, 117);
     color: white;
     text-decoration: underline;
 }
-.nav img{
-    width: 150px;
-    height: 150px;
-    padding: 24px;
-}
-@media(max-width: 1024px){
+@media(max-width: 880px){
     .nav{
-        justify-content: space-around;
+        flex-flow: column;
     }
     .navbar{
-        margin: 20px;
+        margin-top: 20px;
+    }
+    .subnav{
+        margin-top: 10px;
     }
 }
-
-
-
+@media(min-width: 881px){
+    .nav{
+        justify-content: space-between;
+    }
+    .navbar{
+        display: flex;
+    }
+    .subnav{
+        margin-right: 8px;
+    }
+}
 
 /* Conteúdo */
 
@@ -71,6 +78,8 @@ body, ul, li, a{
 }
 .conteudo-texto p{
     font-size: 20px;
+    max-width: 550px;
+    margin: 40px auto;
 }
 .conteudo-img img{
     flex: 1 1 160px;
@@ -86,7 +95,6 @@ img{
 
 
 
-
 /* Rodapé */
 
 .footer{
@@ -97,7 +105,6 @@ img{
     margin: 20px auto;
     flex-wrap: wrap;
 }
-
 .redes1{
     display: flex;
     align-items: center;
@@ -106,17 +113,18 @@ img{
     font-size: 35px;
     color: rgb(147, 31, 255);
 }
-.redes2 li{
-    font-size: 25px;
-    margin: 40px 0;
-}
-.redes2 li a{
+.item{
     color: white;
     background: rgb(6, 197, 245);
-    padding: 12px;
+    font-size: 30px;
+    margin: 20px 0;
+    padding: 10px;
+    transition: all 0.2s linear;
+    border-radius: 5px;
 }
-.redes2 li a:hover{
+.item:hover{
     text-decoration: underline;
+    background: rgba(14, 38, 44, 0.616);
 }
 .footer2 p{
     text-align: center;
@@ -125,4 +133,6 @@ img{
     max-width: 960px;
     color: white;
     font-size: 20px;
+    padding: 10px;
+    border-radius: 5px 0px;
 }
